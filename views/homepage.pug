@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Capacity Advisors
+
+        a(href="/update-cobj") Add to this table
+        table
+            tr
+                th Name
+                th Week start date
+                th Advisor ceiling
+            each advisor in data
+                tr
+                    td= advisor.properties.name
+                    td= advisor.properties.week_start_date
+                    td= advisor.properties.advisor_ceiling  

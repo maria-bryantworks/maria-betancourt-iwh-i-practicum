@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add a Capacity Advisor.
+        a(href="/") Return to the homepage
+        form(action="/update-cobj" method="POST")
+            label(for="name") Advisor name
+            input(type="text" name="name" id="name")
+            label(for="week_start_date") Week start date
+            input(type="date" name="week_start_date" id="week_start_date")
+            label(for="advisor_ceiling") Advisor ceiling
+            input(type="number" name="advisor_ceiling" id="advisor_ceiling")
+            button(type="submit") Save advisors
